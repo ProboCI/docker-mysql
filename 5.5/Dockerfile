@@ -33,7 +33,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory
 		libaio1 \
 # mysql: error while loading shared libraries: libncurses.so.5: cannot open shared object file: No such file or directory
-		libncurses5 \
+		libncurses5-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV MYSQL_MAJOR 5.5
